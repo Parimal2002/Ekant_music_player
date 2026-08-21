@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#090a12">
+  <meta name="description" content="एकांत — a quiet place for music and memories.">
+  <title>एकांत — Stay A Little Longer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page">
+
+    <div class="background"></div>
+    <div class="shade"></div>
+    <div class="grain"></div>
+    <div id="stars" class="stars"></div>
+
+    <main class="content">
+
+      <section class="hero">
+        <div class="eyebrow">
+          <span class="live-dot"></span>
+          <span id="onlineText">A QUIET NIGHT</span>
+        </div>
+
+        <h1>एकांत</h1>
+        <p class="subtitle">stay a little longer</p>
+
+        <div class="thought">
+          <span class="spark">✦</span>
+          <span id="quote">Some nights are not meant to be explained. Just felt.</span>
+        </div>
+      </section>
+
+      <!-- Small premium music player -->
+      <section class="player-shell" aria-label="Music player">
+
+        <div class="track-cover">
+          <img id="trackThumb" src="assets/background.png" alt="Current song artwork">
+          <div class="cover-glow"></div>
+          <div class="equalizer" id="equalizer">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+
+        <div class="track-info">
+          <div class="mini-label">NOW PLAYING</div>
+          <h2 id="trackTitle">एकांत — Your Night</h2>
+          <p id="trackArtist">Connect a YouTube playlist</p>
+        </div>
+
+        <div class="player-actions">
+          <button class="icon-btn" id="prevBtn" aria-label="Previous">⏮</button>
+          <button class="play-btn" id="playBtn" aria-label="Play">▶</button>
+          <button class="icon-btn" id="nextBtn" aria-label="Next">⏭</button>
+        </div>
+
+        <div class="progress-area">
+          <span id="currentTime">0:00</span>
+          <input id="progress" type="range" min="0" max="100" value="0" aria-label="Song progress">
+          <span id="duration">0:00</span>
+        </div>
+
+        <div class="bottom-controls">
+          <button class="tiny-btn active" id="shuffleBtn">⤨ <span>SHUFFLE</span></button>
+          <button class="tiny-btn" id="muteBtn">◖)) <span>VOLUME</span></button>
+          <input id="volume" class="volume" type="range" min="0" max="100" value="72" aria-label="Volume">
+          <span class="count" id="count">00 / 00</span>
+        </div>
+
+      </section>
+
+    
+
+        </main>
+
+    <!-- Hidden YouTube Player -->
+    <div id="youtube-player"></div>
+
+    <div id="toast" class="toast"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

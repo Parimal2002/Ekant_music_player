@@ -1,0 +1,4 @@
+# Optional local files
+.env
+.DS_Store
+Thumbs.db
